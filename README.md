@@ -56,3 +56,19 @@ fs.copyFileSync("file1.txt","file2.txt");
 //create file1.txt
 ```
 this snippet creates a file 2.txt whenever one runs the code through cmd using ```node index.js``` and automatically creates file 2.txt and adds the contents of file1.txt and even if there is a prewritten text on file2.txt ,this command overwrites that text and replaces with file1.txt''s text.
+
+
+
+# NPM:Node Package Manager:
+
+Npm is the worlds largest external node modules site.
+
+## Configuring NPM:
+-  cmd--> npm init--> *_do whatever is asked ON THE EXACT FOLDER PATH,MAKE SURE THAT YOU ARE IN THE EXACT FOLDER WHERE YOU WANT TO PERFORM NPM TASKS AND EVEN BASIC CMD TASKS!_*
+
+How to access?:through index2.js,index3.js and below :
+
+> - Go to Npm site.
+> - search for the package you want to incorp in your project.
+> - in Hyper terminal/cmd , type `npm install <pkgname>` and then it will install the package name.
+> - read the documentation on including and API of that module on how to use it.
