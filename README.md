@@ -31,3 +31,28 @@ So now, with Node.js, you can write Javascript code not just in the browser to a
 
 >  We're learning how to make web sites, right?Well, we can run Node.js on our own computer, but we could also use Node.js to run Javascript code on somebody else's computer,or rather, a server.And what that means is that a user could log on to Google and put in a query, and your browser will make a request to Google servers, and on those servers we can actually execute Javascript code to process their request.And after that's done, we can send back the result to the user, or to the client, and simply get their web browser to display the information, and all of that heavy lifting, the code execution, happens behind the scenes, on the server,rather than on the client side,and that will make your web site a lot more capable.Example:to access local files or listen to network traffic and manipulate databases.
 
+
+# Node REPL:
+
+> REPL stands for Read Evaluate Print Loops and it basically allows you to execute code in bite sized chunks, just like what we did with the Chrome Developer Tools Console inside Chrome.We were able to write a single line of code and then hit enter and it would run that line of code and then we could run another line of code etc..
+
+- So by installing Node, we also installed the Node REPL, and to access it all we do is write the command node inside the command line and hit enter.
+And once you see that little angle bracket, then you know you're inside the REPL.So here we can write code directly. example: I could write ```console.log(“Hey there!”);``` and if I hit enter then it will execute it straight away.
+
+So we can also execute other bits of code, for example `3 + 5` equals 8, or `“Soubhik“ +“Gon”` will be my name, Soubhik Gon, as a string.
+
+
+And it's also got short cuts, like, for example, if we didn't feel like writing out the entirety of console.logwe can write con, tab, and if one tab doesn't give you any results, you can tab again and that will give you all the possible commands that you can use at this point.
+
+
+> Sometimes, while you're working in the command line, one of the most difficult things can be figuring out how to exit the process that you're currently in.
+- Now, in order to exit the REPL, you can either say `.exit` and hit enter, or you can simply hit Cntrl C twice. And in a lot of cases in the future, when we're running servers, or when we’re starting processes, Cntrl C will usually get out of any process that you're running at that time.And if you wanted to clear your console, you can simply just write clear, and it will delete all of the previous commands.
+
+
+In index.js file,write :
+```
+const fs=require("fs");
+fs.copyFileSync("file1.txt","file2.txt");
+//create file1.txt
+```
+this snippet creates a file 2.txt whenever one runs the code through cmd using ```node index.js``` and automatically creates file 2.txt and adds the contents of file1.txt and even if there is a prewritten text on file2.txt ,this command overwrites that text and replaces with file1.txt''s text.
