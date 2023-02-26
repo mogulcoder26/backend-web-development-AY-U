@@ -132,6 +132,7 @@ Q.Create a route which has a contact me response and also a about response for r
 Ans)in server.js..
 
 
+
  # How to apply nodemon and forget about hassle of restarting and closing your server after each fix in code of server.js is :
 
 P.S : Nodemon is a npm pkg which is used to automate the server starting and closing and actively tracks on the selected file for any changes and applies it without restarting!
@@ -151,7 +152,11 @@ Server started on port 3000.
 
 ```
 
-
+  GET request response ,sending a file name.
+  
+  NOTE:`__dirname` shows the full path of the directory where the html file exists.It is helpful when we store our code and deploy the web app through Cloud services like Heroku and Vercel where Local File path cant be used
+eg: `res.sendFile(__dirname+"/index.html);`
+sendFile() is used to send a whole HTML file.Better than linking ujp various sites which often causes issues.
 
 
 
