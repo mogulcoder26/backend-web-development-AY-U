@@ -72,3 +72,30 @@ How to access?:through index2.js,index3.js and below :
 > - search for the package you want to incorp in your project.
 > - in Hyper terminal/cmd , type `npm install <pkgname>` and then it will install the package name.
 > - read the documentation on including and API of that module on how to use it.
+
+# Express:
+ It is a framework for Node.js and is used to make a server and use reusable bit of code to make working with Node easier.
+
+ to use,in CMD:
+
+```
+npm install express
+
+```
+
+then perform npm init and configure the file with node.
+
+for making a server :
+
+```
+
+const express =require("express");
+
+const app=express();
+
+app.listen(3000,function(){
+    console.log("Server started on port 3000");
+});
+
+
+```
