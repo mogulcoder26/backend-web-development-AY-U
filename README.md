@@ -97,5 +97,62 @@ app.listen(3000,function(){
     console.log("Server started on port 3000");
 });
 
+```
+
+
+This throws an error when we search on the web engine about `localhost:3000` and it shows `Cannot GET /` 
+
+this means that whenever a REQUEST is sent by the browser to fetch data from the homepage(root) of the `localhost:3000` ,it fails as there is no RESPONSE for that REQUEST.
+
+The example is shown in server.js
 
 ```
+//importing express to our project
+const express =require("express");
+//making a object express and naming it as "app".
+const app = express();
+
+// Get request and response
+app.get("/" ,function(request,response){
+console.log(request);
+response.send("<h1>Hello World!");
+})
+// Note:"/" is called the route of the website.
+//tuning the site to port 3000 [Our server]
+app.listen(3000,function(){
+    console.log("Server started on port 3000.");
+})
+
+```
+
+NOTE:The best practice is to denote request with req and response with res.
+
+Q.Create a route which has a contact me response and also a about response for respective Routes:
+
+Ans)in server.js..
+
+
+ # How to apply nodemon and forget about hassle of restarting and closing your server after each fix in code of server.js is :
+
+P.S : Nodemon is a npm pkg which is used to automate the server starting and closing and actively tracks on the selected file for any changes and applies it without restarting!
+
+to incorp nodemon,we install it.
+```npm install -g nodemon```
+
+- Syntax to use it[In Cmd]:
+```
+C:\Users\KIIT\Desktop\backend webdev\backend-web-development-AY-U\my-express-server>nodemon server.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Server started on port 3000.
+
+```
+
+
+
+
+
+
