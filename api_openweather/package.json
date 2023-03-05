@@ -1,0 +1,19 @@
+{
+  "name": "api_openweather",
+  "version": "1.0.0",
+  "description": "Using Open Weathe API to fetch weather data and it on my site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://mogulcoder26/backend-web-development-AY-U"
+  },
+  "author": "Soubhik Kumar Gon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "https": "^1.0.0"
+  }
+}

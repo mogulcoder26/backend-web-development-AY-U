@@ -225,3 +225,65 @@ So now we're only logging the value of the first input.So if we go back to our w
 
 The important thing to take away from this is when you look at our web site and I right click and say View Page Source, you can see that all the client gets to see, all my browser gets to see, when I try to go to this web site is just a plain and simple HTML web site.I am not privy to any of that Javascript code that was executed to calculate the numbers.All of that is hidden and taken away from the client side because we're doing it on our server.And this is all because we built a backend that is doing the code execution instead of having all of that Javascript run on the front end, which is on the client browser. And that is the most important thing to take away.We now have a web application because our code is running on the backend as opposed to just simply having static files being rendered and loaded up, and having our Javascript run on the client side, or the front end.
 
+# Application Programming Interface's[API's]:
+
+- An application Programming Interface (API) is a set of commands,functions,protocols and objects that programmers can use to create software or interact with an external system.The programmers can use to create software or interact with an external system.
+
+- It's like an contract between the data provider and the developer and what it says is these are all the things that developers can access, and these are the methods , the objects,the protocols that you would use to access them and we,as the web site that hosts the data,will try to not change any of these methods or functions without notifying the developer.
+
+Note : JQuery is an API.Tinder uses FB API.
+
+```
+YOUR SERVER---->API(Request)--->Other Server.
+YOUR SERVER<----API(Response)<---Other Server.
+```
+
+# API:
+- endpoints-it is an access point to send the http requests to and get your response .
+```
+eg:for GET requests  in joke api:
+https://svg443.net/jokeapi/v2/joke/[Category/-ies].
+
+the [Category/-ies] refers to the additonal path and parameters of the api you want to use whereas all the things before it are known as endpoints.
+
+if you only use endpoint link /the starting url,we also need to mention the path or the apramter /additional thing required to send the get request.
+
+also note:
+https://svg443.net/jokeapi/v2/joke/Programming?blacklistFlags=nsfw&type=single&contains=debugging
+
+when you want to specify a paramter ,you to include a parameeter,you need to put them after a "?" and then join them with "&" with a key=value parameter. 
+
+ ```
+- endpoints
+- path
+- parameters
+- Authentication
+
+eg: https://kanye.rest
+
+61841bb48d2a721340b05871a8857a0c
+
+
+https://api.openweathermap.org/data/2.5/weather?q=odisha,ind&appid=61841bb48d2a721340b05871a8857a0c&units=metric
+
+
+# JSON-Javascript Object Notation:
+
+It is a way to store data in the form of array and objects in javascript.API's send responses of the request data in the form of JSON,XML,HTML ...JSON is the most famous and widely used format.
+
+Now that we've seen how we can use APIs to get data from various web sites, including things like quotes or jokes or live weather data, it's time to put it into practice and get these pieces of data from an API and then use it inside our own web apps.
+
+This is what the process will roughly look like.
+
+The client browser,so this is our user, is going to be typing in our web address into their browser, say Chrome, and that is going to make a request to our server, and that's going to be a GET request.So it's going to try and get the HTML, CSS and Javascript from our server.Now at this point what happens is our server should return all of those pieces of data,the HTML, CSS and Javascript, and that's in the response. But in order to be able to give them that response that includes some data from somebody else's server, we're going to have to make a request to that other server.And it's again going to be a GET request, so that they will give us a response in the form of the data that we need.And we're going to do this via their API, so via the menu that they provided for us to make our requests,where they've specified what are the things that we need to pass over, like what parameters, what paths,what key value pairs we have to use in order to get the response and the data that we want.So then, once we get the data, we can go back and incorporate that data into the files that we send back to our client, the user for our web site.
+
+That's just the high level overview of what's going to happen in the code that we're going to write.
+
+# Weather project:
+ 
+``` 
+HTTPS/Full name:
+Hypertext Transfer Protocol Secure
+
+```
+how to parse data using JSON:
