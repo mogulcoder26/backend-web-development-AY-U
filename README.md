@@ -287,3 +287,10 @@ Hypertext Transfer Protocol Secure
 
 ```
 how to parse data using JSON:
+
+
+
+
+app.use(express.static("public"));
+this line helps to retrieve static files to server.
+
