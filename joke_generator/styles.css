@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Sacramento&family=Special+Elite&family=Tilt+Prism&display=swap');
+
+h1 {
+    font-family: 'Tilt Prism', cursive;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main{
+    width: auto;
+    height: 200px;
+}
+#joke{
+    width: auto;
+    height: 200px;
+}
+
