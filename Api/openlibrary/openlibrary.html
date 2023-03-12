@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic+Coding:wght@700&family=Open+Sans&family=Sacramento&family=Source+Code+Pro:wght@600&display=swap');
+        * {
+            padding: 0px;
+            padding-top: 10px;
+            margin: 0px;
+            border: 0px;
+        }
+        .tagmain{
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        th,
+        td {
+            padding: 20px;
+            border-color:rgb(97, 73, 123);
+            border-width: 5px;
+        }
+
+        #input{
+            background-color:#2b0c6353;
+            border-radius: 10px;
+            width: 200px;
+            height: 38px;
+            text-shadow: aliceblue;
+             font-family: 'Source Code Pro', monospace;;
+            }
+        body{
+            background-color: #CB80FF;
+            
+        }
+        table{
+            border-radius: 10px;
+        }
+        .btn{
+            position: relative;
+            bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <div class="tagmain">
+            <h1>Welcome to Book Search!</h1>
+
+            <h3>Search the books by entering the Data in the search bar.
+                Powered by OpenLibrary API</h3>
+                <br>
+                <br>
+                
+        </div>
+
+        <div class="mainfunction">
+            <input type="text" id="input" placeholder="  Enter Book Name!!">
+            <button type="submit" class="btn btn-md btn-dark"id="btn">Search!</button>
+            <br>
+            <br>
+            <div id="result">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                <div id="name">
+                                    <h4>name</h4>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="author">
+                                    <h4>author</h4>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </thead>
+                </table>
+                <h1>Hello</h1>
+            </div>
+        </div>
+
+    </center>
+    <script src="C:\Users\KIIT\Desktop\backend webdev\backend-web-development-AY-U-1\E-cell\index.js"></script>
+</body>
+
+</html>
