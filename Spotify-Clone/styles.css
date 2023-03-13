@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic+Coding:wght@700&family=Open+Sans&family=Poppins:wght@200;500&family=Sacramento&family=Source+Code+Pro:wght@600&display=swap');
+
+.brand{
+    color: greenyellow;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+body{
+    background: rgb(18,255,0);
+    background: linear-gradient(90deg, rgba(18,255,0,1) 13%, rgba(59,255,44,1) 28%, rgba(70,255,56,1) 32%, rgba(94,255,82,1) 41%, rgba(124,255,114,1) 52%, rgba(162,255,155,1) 66%, rgba(189,255,184,1) 76%, rgba(217,255,214,1) 86%, rgb(255, 255, 255) 100%);
+    font-family: 'Poppins', sans-serif;
+    }
+
+#spotify-logo{
+    width: 40px;
+    margin-right: 10px;
+}
+
+#song-area{
+background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 1200px;
+height: 900px;
+position: relative;
+top: 50px;
+z-index: 1;
+margin: auto;
+border-radius: 30px;
+}
+#song-container{
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    width: 650px;
+    height: 50px;
+    margin: 10px auto 10px;
+    border-radius: 30px;
+
+}
+#header{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+h6{
+    margin-left: 35px;
+    text-align: left;
+    /* padding-top: 15px; */
+    position: relative;
+    bottom: 23px;
+}
+
+#player-bar{
+    position: fixed;
+    margin-left: 120px;
+    bottom: 10px;
+    width: 80%;
+    height: 70px;
+    background-color:rgb(86, 80, 80);
+    color: white;
+    text-align: center;
+    z-index: 3;
+    border-radius: 80px;
+  }
+
+.fa-solid{
+    width: 120px;
+    height: 100px;
+   margin-top: 10px;
+}
+.playpause,.frontstep,.backstep{
+    height: 100px;
+    width: 120px;
+    z-index: 4;
+}
+
+#progress-bar{
+    position: relative;
+    bottom: 70px;
+    z-index: 4;
+    width: 700px;
+    margin-top: 10px;
+}
+
+.cover-img{
+    height: 30px;
+    width: 30px;
+    text-align: left;
+    position: relative;
+    right: 280px;
+    z-index: 6;
+    top:11px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
